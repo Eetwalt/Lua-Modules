@@ -1,0 +1,120 @@
+{
+  "repo_notes": [
+    {
+      "content": "This repository contains Lua modules for Liquipedia wikis, with the main structure being: lua/wikis/commons/ for base and utility modules used across all wikis, lua/wikis/{game}/ for game-specific implementations that extend commons modules, javascript/ for client-side interactivity, and stylesheets/ for SCSS styling. The commons modules serve as the foundation that game-specific modules inherit from.",
+      "author": "Documentation Team"
+    }
+  ],
+  "pages": [
+    {
+      "title": "Repository Structure and Architecture",
+      "purpose": "Document the overall codebase organization, the three-language structure (Lua, JavaScript, SCSS), and how different directories relate to each other",
+      "parent": null
+    },
+    {
+      "title": "Commons Base Modules Overview",
+      "purpose": "Document the foundational modules in lua/wikis/commons/ that provide core functionality used across all Liquipedia wikis",
+      "parent": "Repository Structure and Architecture"
+    },
+    {
+      "title": "Utility Modules and Libraries",
+      "purpose": "Document the utility modules in commons that provide reusable functionality like Class, Logic, StringUtils, and other helper modules",
+      "parent": "Commons Base Modules Overview"
+    },
+    {
+      "title": "Module System and Inheritance",
+      "purpose": "Explain how game-specific modules in wikis/{game}/ directories inherit from and extend commons base modules, including the Module:Class export pattern",
+      "parent": "Repository Structure and Architecture"
+    },
+    {
+      "title": "Game-Specific Implementations",
+      "purpose": "Document how game-specific directories like dota2/ contain modules that extend commons functionality for specific wiki needs",
+      "parent": "Module System and Inheritance"
+    },
+    {
+      "title": "Data Flow and Processing Pipeline",
+      "purpose": "Document how data flows from user input/API calls through the Lua module system to rendered components, including the match system pipeline",
+      "parent": null
+    },
+    {
+      "title": "Match System Architecture",
+      "purpose": "Document the Match2 system structure, including input processing, standardization, LPDB storage, and display components",
+      "parent": "Data Flow and Processing Pipeline"
+    },
+    {
+      "title": "Template Integration and Invocation",
+      "purpose": "Document how templates invoke Lua modules using the @Liquipedia header system and Module:Lua.invoke functionality",
+      "parent": "Data Flow and Processing Pipeline"
+    },
+    {
+      "title": "Component and Infobox Systems",
+      "purpose": "Document how components and infoboxes are structured, including the Module:Infobox hierarchy and component organization patterns",
+      "parent": "Data Flow and Processing Pipeline"
+    },
+    {
+      "title": "JavaScript Interactivity Layer",
+      "purpose": "Document the purpose and implementation of JavaScript files that add client-side functionality like filtering, dropdowns, analytics, and interactive elements",
+      "parent": null
+    },
+    {
+      "title": "Client-Side Enhancement Patterns",
+      "purpose": "Document common patterns for adding interactivity to server-rendered Lua components, including button configurations and element manipulation",
+      "parent": "JavaScript Interactivity Layer"
+    },
+    {
+      "title": "SCSS Styling Architecture",
+      "purpose": "Document the stylesheet organization and how SCSS files style both Lua-rendered components and MediaWiki elements",
+      "parent": null
+    },
+    {
+      "title": "Component Styling Patterns",
+      "purpose": "Document styling patterns for Liquipedia components, including how styles are organized and applied to different component types",
+      "parent": "SCSS Styling Architecture"
+    },
+    {
+      "title": "Development Best Practices",
+      "purpose": "Document coding standards, maintainable code practices, and development patterns used throughout the repository",
+      "parent": null
+    },
+    {
+      "title": "Module Development Guidelines",
+      "purpose": "Document best practices for creating maintainable Lua modules, including naming conventions, documentation patterns, and the dev module system",
+      "parent": "Development Best Practices"
+    },
+    {
+      "title": "Code Organization Patterns",
+      "purpose": "Document common patterns for structuring code, including the components vs libraries distinction, file organization, and module interdependencies",
+      "parent": "Development Best Practices"
+    },
+    {
+      "title": "Error Handling and Debugging",
+      "purpose": "Document error handling patterns, the Module:Error system, and debugging approaches used in the codebase",
+      "parent": "Development Best Practices"
+    },
+    {
+      "title": "Testing and Quality Assurance",
+      "purpose": "Document the testing approach including unit tests in the spec/ folder and quality assurance practices",
+      "parent": "Development Best Practices"
+    },
+    {
+      "title": "Performance and Optimization",
+      "purpose": "Document performance considerations, optimization patterns, and the Lua.withPerfSetup instrumentation system",
+      "parent": "Development Best Practices"
+    },
+	{
+	  "title": "Development workflow",
+	  "purpose": "Document the development workflow, including how to set up a development environment, how to run tests, and how to submit pull requests",
+	  "parent": "Developer Best Practices"
+	},
+    {
+      "title": "LPDB Integration and Data Storage",
+      "purpose": "Document how modules interact with the Liquipedia Database (LPDB), including data storage patterns and querying approaches",
+      "parent": "Data Flow and Processing Pipeline"
+    },
+    {
+      "title": "Cross-Wiki Compatibility",
+      "purpose": "Document strategies for maintaining compatibility across different Liquipedia wikis while allowing game-specific customizations",
+      "parent": "Module System and Inheritance"
+    }
+  ]
+}
